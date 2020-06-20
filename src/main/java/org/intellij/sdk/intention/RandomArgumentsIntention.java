@@ -106,7 +106,7 @@ public class RandomArgumentsIntention extends PsiElementBaseIntentionAction impl
             return "1.0";
         }
         if (FLOAT_TYPE.equals(parameterType)) {
-            return "1.0f";
+            return "1.0F";
         }
         if (CHAR_TYPE.equals(parameterType)) {
             return "'c'";
