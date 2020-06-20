@@ -1,0 +1,37 @@
+<!-- Copyright 2000-2020 JetBrains s.r.o. and other contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+
+<idea-plugin>
+
+    <!--  Unique id for this plugin. Must stay constant for the life of the plugin.  -->
+    <id>org.ojplugins</id>
+
+    <!-- Text to display as name on Preferences/Settings | Plugin page -->
+    <name>Random parameter constructor</name>
+
+    <!-- Product and plugin compatibility requirements -->
+    <depends>com.intellij.modules.java</depends>
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Text to display as description on Preferences/Settings | Plugin page  -->
+    <description>
+        <![CDATA[
+      Intention action that suggests converting a ternary operator into an 'if' block.<br>Adds entry to <b>Preferences | Editor | Intentions | Constructor Intentions<b>.
+    ]]>
+    </description>
+    <vendor>ojplugins</vendor>
+    <change-notes>
+        <![CDATA[
+      <ul>
+        <li><b>Initial release: plugin enables to generate random constructor parameters</li>
+      </ul>
+    ]]>
+    </change-notes>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <intentionAction>
+            <className>org.intellij.sdk.intention.RandomConstructorParametersIntention</className>
+            <category>Constructor intentions</category>
+        </intentionAction>
+    </extensions>
+
+</idea-plugin>
