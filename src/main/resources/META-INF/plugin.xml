@@ -6,7 +6,7 @@
     <id>org.ojplugins</id>
 
     <!-- Text to display as name on Preferences/Settings | Plugin page -->
-    <name>Random parameter constructor</name>
+    <name>Stub method arguments</name>
 
     <!-- Product and plugin compatibility requirements -->
     <depends>com.intellij.modules.java</depends>
@@ -15,22 +15,22 @@
     <!-- Text to display as description on Preferences/Settings | Plugin page  -->
     <description>
         <![CDATA[
-      Intention action that suggests converting a ternary operator into an 'if' block.<br>Adds entry to <b>Preferences | Editor | Intentions | Constructor Intentions<b>.
+      Intention action that suggests to generate stub parameters of method call<br>Adds entry to <b>Preferences | Editor | Intentions | Method intentions<b>.
     ]]>
     </description>
-    <vendor>ojplugins</vendor>
+    <vendor url="">ojplugins</vendor>
     <change-notes>
         <![CDATA[
       <ul>
-        <li><b>Initial release: plugin enables to generate random constructor parameters</li>
+        <li><b>Initial release: plugin enables to generate stub method arguments</li>
       </ul>
     ]]>
     </change-notes>
 
     <extensions defaultExtensionNs="com.intellij">
         <intentionAction>
-            <className>org.intellij.sdk.intention.RandomConstructorParametersIntention</className>
-            <category>Constructor intentions</category>
+            <className>org.intellij.sdk.intention.RandomArgumentsIntention</className>
+            <category>Method intentions</category>
         </intentionAction>
     </extensions>
 

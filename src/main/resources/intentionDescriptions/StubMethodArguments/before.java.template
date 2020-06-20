@@ -1,5 +1,5 @@
 public class X {
-  void f(boolean isMale) {
+  void method() {
     ObjectToTest obj = new ObjectToTest("manuallyTypedParameter");
  }
 }
